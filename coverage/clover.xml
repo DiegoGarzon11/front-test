@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1785027330887" clover="3.2.0">
+  <project timestamp="1785027330887" name="All files">
+    <metrics statements="140" coveredstatements="126" conditionals="93" coveredconditionals="82" methods="42" coveredmethods="35" elements="275" coveredelements="243" complexity="0" loc="140" ncloc="140" packages="6" files="6" classes="6"/>
+    <package name="app">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="hook.ts" path="C:\Users\diego\programacion\test-wompi\front\src\app\hook.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="132" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components">
+      <metrics statements="56" coveredstatements="55" conditionals="49" coveredconditionals="47" methods="16" coveredmethods="15"/>
+      <file name="CardModal.tsx" path="C:\Users\diego\programacion\test-wompi\front\src\components\CardModal.tsx">
+        <metrics statements="56" coveredstatements="55" conditionals="49" coveredconditionals="47" methods="16" coveredmethods="15"/>
+        <line num="12" count="124" type="stmt"/>
+        <line num="13" count="129" type="stmt"/>
+        <line num="15" count="124" type="stmt"/>
+        <line num="16" count="124" type="stmt"/>
+        <line num="17" count="124" type="stmt"/>
+        <line num="18" count="124" type="stmt"/>
+        <line num="19" count="124" type="stmt"/>
+        <line num="21" count="124" type="stmt"/>
+        <line num="22" count="124" type="stmt"/>
+        <line num="23" count="124" type="stmt"/>
+        <line num="25" count="124" type="stmt"/>
+        <line num="26" count="124" type="stmt"/>
+        <line num="27" count="124" type="stmt"/>
+        <line num="28" count="124" type="stmt"/>
+        <line num="30" count="124" type="stmt"/>
+        <line num="32" count="124" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="37" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="40" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="43" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="46" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="49" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="52" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="55" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="58" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="61" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="64" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="68" count="2" type="stmt"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="73" count="2" type="stmt"/>
+        <line num="75" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="77" count="1" type="stmt"/>
+        <line num="97" count="124" type="cond" truecount="1" falsecount="1"/>
+        <line num="99" count="124" type="stmt"/>
+        <line num="125" count="32" type="stmt"/>
+        <line num="140" count="2" type="stmt"/>
+        <line num="152" count="2" type="stmt"/>
+        <line num="164" count="3" type="stmt"/>
+        <line num="177" count="11" type="stmt"/>
+        <line num="193" count="13" type="stmt"/>
+        <line num="205" count="11" type="stmt"/>
+        <line num="217" count="10" type="stmt"/>
+        <line num="233" count="16" type="stmt"/>
+        <line num="246" count="6" type="stmt"/>
+        <line num="257" count="12" type="stmt"/>
+        <line num="270" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="features.checkout">
+      <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
+      <file name="checkoutSlice.ts" path="C:\Users\diego\programacion\test-wompi\front\src\features\checkout\checkoutSlice.ts">
+        <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="30" count="6" type="stmt"/>
+        <line num="31" count="6" type="stmt"/>
+        <line num="32" count="6" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="71" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages">
+      <metrics statements="16" coveredstatements="16" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="7"/>
+      <file name="ProductPage.tsx" path="C:\Users\diego\programacion\test-wompi\front\src\pages\ProductPage.tsx">
+        <metrics statements="16" coveredstatements="16" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="7"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="19" count="8" type="stmt"/>
+        <line num="21" count="8" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="28" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="36" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="44" count="3" type="stmt"/>
+        <line num="53" count="6" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="services">
+      <metrics statements="14" coveredstatements="1" conditionals="8" coveredconditionals="2" methods="6" coveredmethods="0"/>
+      <file name="api.ts" path="C:\Users\diego\programacion\test-wompi\front\src\services\api.ts">
+        <metrics statements="14" coveredstatements="1" conditionals="8" coveredconditionals="2" methods="6" coveredmethods="0"/>
+        <line num="5" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="32" coveredstatements="32" conditionals="26" coveredconditionals="23" methods="5" coveredmethods="5"/>
+      <file name="cardValitation.ts" path="C:\Users\diego\programacion\test-wompi\front\src\utils\cardValitation.ts">
+        <metrics statements="32" coveredstatements="32" conditionals="26" coveredconditionals="23" methods="5" coveredmethods="5"/>
+        <line num="6" count="128" type="stmt"/>
+        <line num="8" count="128" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="120" type="stmt"/>
+        <line num="12" count="8" type="cond" truecount="4" falsecount="0"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="22" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="30" count="48" type="stmt"/>
+        <line num="32" count="48" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="24" type="stmt"/>
+        <line num="34" count="24" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="48" type="stmt"/>
+        <line num="38" count="48" type="stmt"/>
+        <line num="41" count="3" type="stmt"/>
+        <line num="45" count="5" type="stmt"/>
+        <line num="46" count="5" type="stmt"/>
+        <line num="48" count="5" type="cond" truecount="6" falsecount="0"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="53" count="3" type="stmt"/>
+        <line num="54" count="3" type="stmt"/>
+        <line num="56" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="57" count="2" type="cond" truecount="2" falsecount="2"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="63" count="5" type="stmt"/>
+        <line num="67" count="125" type="stmt"/>
+        <line num="68" count="125" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

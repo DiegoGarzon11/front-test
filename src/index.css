@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-display: 'Space Grotesk', sans-serif;
+	--font-sans: 'Inter', sans-serif;
+	--font-mono: 'JetBrains Mono', monospace;
+
+	--color-bone: #fafaf9;
+	--color-ink: #18181b;
+	--color-teal: #0f766e;
+	--color-teal-dark: #115e59;
+	--color-success: #16a34a;
+	--color-error: #dc2626;
+	--color-border: #e4e4e7;
+}
+
+body {
+	background-color: var(--color-bone);
+	color: var(--color-ink);
+	font-family: var(--font-sans);
+}
