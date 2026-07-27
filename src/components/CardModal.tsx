@@ -1,4 +1,3 @@
-
 import { useState, type FormEvent } from 'react';
 import { useAppDispatch, useAppSelector } from '../app/hook';
 import { submitCheckoutDetails } from '../features/checkout/checkoutSlice';
@@ -11,7 +10,6 @@ interface FormErrors {
 export function CardModal() {
 	const dispatch = useAppDispatch();
 	const product = useAppSelector((state) => state.checkout.selectedProduct);
-
 	const [cardNumber, setCardNumber] = useState('');
 	const [cardExpMonth, setCardExpMonth] = useState('');
 	const [cardExpYear, setCardExpYear] = useState('');
@@ -100,7 +98,17 @@ export function CardModal() {
 		<div className='fixed inset-0 z-50 flex items-end justify-center bg-ink/40 backdrop-blur-sm sm:items-center sm:p-4'>
 			<div className='max-h-[90vh] w-full overflow-y-auto rounded-t-3xl bg-white p-6 shadow-xl sm:max-w-lg sm:rounded-3xl'>
 				<div className='mb-5'>
-					<p className='font-mono text-xs uppercase tracking-widest text-teal'>Paso 2 de 4</p>
+					<div className='flex justify-between'>
+						<p className='font-mono text-xs uppercase tracking-widest text-teal'>Paso 2 de 4</p>
+						<button
+							className='cursor-pointer'
+							onClick={() => {
+								localStorage.removeItem('checkout-state');
+								window.location.reload();
+							}}>
+							X
+						</button>
+					</div>
 					<h2 className='mt-1 font-display text-xl font-semibold'>Datos de pago y entrega</h2>
 					<p className='mt-1 text-sm text-ink/60'>
 						Comprando: <span className='font-medium text-ink'>{product.name}</span>
@@ -276,7 +284,7 @@ export function CardModal() {
 
 					<button
 						type='submit'
-						className='w-full rounded-lg bg-teal px-4 py-3 font-medium text-white transition hover:bg-teal-dark'>
+						className='w-full rounded-lg bg-teal px-4 py-3 font-medium text-white transition hover:bg-teal-dark cursor-pointer'>
 						Continuar
 					</button>
 				</form>

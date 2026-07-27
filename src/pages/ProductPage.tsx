@@ -71,7 +71,7 @@ export function ProductPage() {
 							type='button'
 							disabled={product.stock === 0}
 							onClick={() => dispatch(selectProduct(product))}
-							className='mt-4 rounded-lg bg-teal px-4 py-2.5 font-medium text-white transition hover:bg-teal-dark disabled:cursor-not-allowed disabled:bg-ink/20'>
+							className='mt-4 rounded-lg bg-teal px-4 py-2.5 font-medium text-white transition hover:bg-teal-dark disabled:cursor-not-allowed disabled:bg-ink/20 cursor-pointer'>
 							{product.stock > 0 ? 'Comprar' : 'Sin stock'}
 						</button>
 					</article>

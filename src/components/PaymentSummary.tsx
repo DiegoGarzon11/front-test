@@ -87,7 +87,7 @@ export function PaymentSummary() {
 						type='button'
 						onClick={handlePay}
 						disabled={isSubmitting}
-						className='w-full rounded-lg bg-teal px-4 py-3 font-medium text-white transition hover:bg-teal-dark disabled:cursor-not-allowed disabled:opacity-60'>
+						className='w-full rounded-lg bg-teal px-4 py-3 font-medium text-white transition hover:bg-teal-dark disabled:cursor-not-allowed disabled:opacity-60 cursor-pointer'>
 						{isSubmitting ? 'Procesando…' : `Pagar ${formatPrice(total)}`}
 					</button>
 					<button

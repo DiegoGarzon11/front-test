@@ -1,4 +1,3 @@
-// src/utils/cardValidation.ts
 
 export type CardBrand = 'VISA' | 'MASTERCARD' | 'UNKNOWN';
 

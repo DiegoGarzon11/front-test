@@ -1,4 +1,3 @@
-// src/services/api.ts
 
 import type { Customer, CustomerFormData, Delivery, DeliveryFormData, Product, Transaction } from '../interfaces';
 
