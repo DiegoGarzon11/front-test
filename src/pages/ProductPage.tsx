@@ -4,6 +4,22 @@ import { getProducts } from '../services/api';
 import { selectProduct } from '../features/checkout/checkoutSlice';
 import type { Product } from '../interfaces';
 
+const PRODUCT_IMAGES: Record<string, string> = {
+	'Audífonos inalámbricos':
+		'https://images.unsplash.com/photo-1603351154351-5e2d0600bb77?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8QUlSUE9EU3xlbnwwfHwwfHx8MA%3D%3D',
+	'Mochila urbana':
+		'https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXJiYW4lMjBiYWNrcGFja3xlbnwwfHwwfHx8MA%3D%3D',
+	'Reloj inteligente':
+		'https://images.unsplash.com/photo-1722445423163-f57f92ea9f78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2FybWlufGVufDB8fDB8fHww',
+};
+
+function withImages(products: Product[]): Product[] {
+	return products.map((product) => ({
+		...product,
+		imageUrl: PRODUCT_IMAGES[product.name] ?? product.imageUrl,
+	}));
+}
+
 function formatPrice(cents: number): string {
 	return new Intl.NumberFormat('es-CO', {
 		style: 'currency',
@@ -20,7 +36,9 @@ export function ProductPage() {
 
 	useEffect(() => {
 		getProducts()
-			.then(setProducts)
+			.then((data) => {
+				setProducts(withImages(data));
+			})
 			.catch(() => setError('No pudimos cargar los productos. Intenta de nuevo.'))
 			.finally(() => setIsLoading(false));
 	}, []);
@@ -53,8 +71,23 @@ export function ProductPage() {
 					<article
 						key={product.id}
 						className='flex flex-col rounded-2xl border border-border bg-white p-5 shadow-sm transition hover:shadow-md'>
-						<div className='mb-4 flex aspect-square items-center justify-center rounded-xl bg-bone text-ink/20'>
-							<span className='font-mono text-xs'>Sin imagen</span>
+						<div className='mb-4 aspect-square overflow-hidden rounded-xl bg-bone'>
+							{product.imageUrl ? (
+								<img
+									src={product.imageUrl}
+									alt={product.name}
+									loading='lazy'
+									decoding='async'
+									className='h-full w-full object-cover'
+									onError={(e) => {
+										e.currentTarget.style.display = 'none';
+										e.currentTarget.nextElementSibling?.classList.remove('hidden');
+									}}
+								/>
+							) : null}
+							<div className={`flex h-full w-full items-center justify-center text-ink/20 ${product.imageUrl ? 'hidden' : ''}`}>
+								<span className='font-mono text-xs'>Sin imagen</span>
+							</div>
 						</div>
 
 						<h2 className='font-display text-lg font-semibold leading-tight'>{product.name}</h2>
