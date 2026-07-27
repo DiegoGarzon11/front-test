@@ -66,8 +66,8 @@ describe('CardModal', () => {
 		await user.type(screen.getByPlaceholderText('123'), '123');
 
 		const pedroPerezInputs = screen.getAllByPlaceholderText('Pedro Pérez');
-		await user.type(pedroPerezInputs[0], 'Pedro Pérez'); // titular de la tarjeta
-		await user.type(pedroPerezInputs[1], 'Pedro Pérez'); // nombre completo del contacto
+		await user.type(pedroPerezInputs[0], 'Pedro Pérez');
+		await user.type(pedroPerezInputs[1], 'Pedro Pérez');
 
 		await user.type(screen.getByPlaceholderText('tucorreo@ejemplo.com'), 'test@test.com');
 		await user.type(screen.getByPlaceholderText('3001234567'), '3001234567');

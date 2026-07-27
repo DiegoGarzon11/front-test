@@ -1,4 +1,3 @@
-// src/app/store.ts
 
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import checkoutReducer from '../features/checkout/checkoutSlice';

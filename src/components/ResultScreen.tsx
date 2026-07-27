@@ -1,4 +1,3 @@
-
 import { useAppDispatch, useAppSelector } from '../app/hook';
 import { backToProductStep } from '../features/checkout/checkoutSlice';
 
@@ -20,7 +19,6 @@ export function ResultScreen() {
 
 	function handleBack() {
 		dispatch(backToProductStep());
-		// Recarga para reflejar el stock actualizado en la página de producto.
 		window.location.reload();
 	}
 

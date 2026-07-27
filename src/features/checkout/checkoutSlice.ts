@@ -1,4 +1,3 @@
-
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 import type { CardFormData, CheckoutStep, CustomerFormData, DeliveryFormData, Product, Transaction } from '../../interfaces';
 
@@ -50,7 +49,7 @@ const checkoutSlice = createSlice({
 		},
 		paymentSucceeded(state, action: PayloadAction<Transaction>) {
 			state.transaction = action.payload;
-			state.cardData = null; // limpiar datos sensibles apenas ya no se necesitan
+			state.cardData = null;
 			state.currentStep = 'RESULT';
 		},
 		paymentFailed(state, action: PayloadAction<string>) {
